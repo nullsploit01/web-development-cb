@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="click-button">Click Me!</button>
+    </div>
+
+    <script>
+      const button = document.getElementById("click-button");
+      button.innerHTML = "Do not click me!";
+      button.setAttribute("disabled", true);
+      button.classList.add("red");
+    </script>
+  </body>
+</html>

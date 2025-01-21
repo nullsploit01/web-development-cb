@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+  </head>
+  <body>
+    <ul id="list">
+      <li>Item 1</li>
+    </ul>
+
+    <script>
+      const list = document.getElementById("list");
+      const newListItem = document.createElement("li");
+      newListItem.innerHTML = "Item 2";
+      list.appendChild(newListItem);
+
+      const firstItem = document.querySelector("li");
+      list.removeChild(firstItem);
+    </script>
+  </body>
+</html>

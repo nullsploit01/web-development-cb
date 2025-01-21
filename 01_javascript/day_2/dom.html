@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <div>
+      <p class="fruit">Apple</p>
+      <p class="fruit">Banana</p>
+      <p class="fruit">Strawberry</p>
+      <p class="fruit">Pineapple</p>
+    </div>
+
+    <script>
+      const fruits = document.querySelectorAll(".fruit");
+      fruits.forEach((fruit) => {
+        const currentFruit = fruit.innerHTML;
+        if (currentFruit === "Banana") {
+          fruit.innerHTML = "Mango";
+        }
+      });
+    </script>
+  </body>
+</html>
