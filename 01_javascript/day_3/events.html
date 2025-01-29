@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h3>Event Handling</h3>
+    <button id="clickMeBtn">Click me!</button>
+
+    <a id="hoverLink" href="#">Hover over me!</a>
+    <script>
+      const btn = document.getElementById("clickMeBtn");
+      btn.addEventListener("click", () => {
+        alert("Button was clicked!");
+      });
+
+      const hoverLink = document.getElementById("hoverLink");
+      hoverLink.addEventListener("mouseover", () => {
+        alert("Link was hovered!");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handlers!</title>
+
+    <style>
+      .red {
+        color: red;
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      .green {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Event Handlers</h3>
+    <p id="styledText">Styled Text</p>
+    <button id="makeGreenBtn">Green</button>
+    <button id="makeBlueBtn">Blue</button>
+    <button id="makeRedBtn">Red</button>
+
+    <script>
+      const styledText = document.getElementById("styledText");
+      const makeGreenBtn = document.getElementById("makeGreenBtn");
+      const makeBlueBtn = document.getElementById("makeBlueBtn");
+      const makeRedBtn = document.getElementById("makeRedBtn");
+
+      makeGreenBtn.addEventListener("click", () => {
+        styledText.classList = [];
+        styledText.classList.add("green");
+      });
+
+      makeBlueBtn.addEventListener("click", () => {
+        styledText.classList = [];
+        styledText.classList.add("blue");
+      });
+
+      makeRedBtn.addEventListener("click", () => {
+        styledText.classList = [];
+        styledText.classList.add("red");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change BG</title>
+
+    <style>
+      .grey {
+        background-color: grey;
+      }
+
+      .black {
+        background-color: black;
+      }
+
+      .aliceblue {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="makeGreyBtn">Grey</button>
+    <button id="makeBlackBtn">Black</button>
+    <button id="makeAliceBlueBtn">AliceBlue</button>
+
+    <script>
+      const body = document.querySelector("body");
+
+      const makeGreyBtn = document.getElementById("makeGreyBtn");
+      const makeBlackBtn = document.getElementById("makeBlackBtn");
+      const makeAliceBlueBtn = document.getElementById("makeAliceBlueBtn");
+
+      makeGreyBtn.addEventListener("click", () => {
+        body.classList = [];
+        body.classList.add("grey");
+      });
+
+      makeBlackBtn.addEventListener("click", () => {
+        body.classList = [];
+        body.classList.add("black");
+      });
+
+      makeAliceBlueBtn.addEventListener("click", () => {
+        body.classList = [];
+        body.classList.add("aliceblue");
+      });
+    </script>
+  </body>
+</html>
