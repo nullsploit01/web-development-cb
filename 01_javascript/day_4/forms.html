@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h3>Application Form</h3>
+    <form id="application-form">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="email" id="email" placeholder="Email" />
+      <button type="submit">Submit</button>
+      <button type="reset">Clear all fields</button>
+    </form>
+    <script>
+      const form = document.getElementById("application-form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+
+        alert(`Form Submitted with values ${name.value} ${email.value}`);
+      });
+    </script>
+  </body>
+</html>
